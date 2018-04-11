@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C65E11F-6E38-474E-B36D-97F13CCD4D9F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EscapeFromTheOffice</RootNamespace>
+    <AssemblyName>EscapeFromTheOffice</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>C:\Users\ninof\Dropbox %28hbu.edu%29\04. Fall 2017\COSC 6342 -  SW Eng Proj Mgmt\Team Project\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3F5C9DF00B481E4A47E62DA1E3E07AEF7FC653D4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>EscapeFromTheOffice_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClockZoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClockZoomForm.Designer.cs">
+      <DependentUpon>ClockZoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComputerCloseUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComputerCloseUpForm.Designer.cs">
+      <DependentUpon>ComputerCloseUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoorZoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoorZoomForm.Designer.cs">
+      <DependentUpon>DoorZoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeftCabinetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeftCabinetForm.Designer.cs">
+      <DependentUpon>LeftCabinetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaintingCloseUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaintingCloseUpForm.Designer.cs">
+      <DependentUpon>PaintingCloseUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlantZoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlantZoomForm.Designer.cs">
+      <DependentUpon>PlantZoomForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RightCabinetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RightCabinetForm.Designer.cs">
+      <DependentUpon>RightCabinetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SofaCloseUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SofaCloseUpForm.Designer.cs">
+      <DependentUpon>SofaCloseUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitleScreenForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitleScreenForm.Designer.cs">
+      <DependentUpon>TitleScreenForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WestWallDrawerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WestWallDrawerForm.Designer.cs">
+      <DependentUpon>WestWallDrawerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowZoomForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowZoomForm.Designer.cs">
+      <DependentUpon>WindowZoomForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ClockZoomForm.resx">
+      <DependentUpon>ClockZoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComputerCloseUpForm.resx">
+      <DependentUpon>ComputerCloseUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoorZoomForm.resx">
+      <DependentUpon>DoorZoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeftCabinetForm.resx">
+      <DependentUpon>LeftCabinetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaintingCloseUpForm.resx">
+      <DependentUpon>PaintingCloseUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlantZoomForm.resx">
+      <DependentUpon>PlantZoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RightCabinetForm.resx">
+      <DependentUpon>RightCabinetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SofaCloseUpForm.resx">
+      <DependentUpon>SofaCloseUpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitleScreenForm.resx">
+      <DependentUpon>TitleScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WestWallDrawerForm.resx">
+      <DependentUpon>WestWallDrawerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowZoomForm.resx">
+      <DependentUpon>WindowZoomForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="EscapeFromTheOffice_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\North Wall.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\East Wall No Chair.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\South Wall.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\East Wall With Chair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\South Wall No Chair.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Window CloseUp.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screwdriver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right Arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shovel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Drawer Closeup.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Number Enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open West Drawer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\West Wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sofa CloseUp.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV Clue Slip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV Overlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer Off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV Code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV Code with Overlay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Painting Closeup.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screw Head.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hole in Wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right Drawer Closeup.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blue Number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yellow Number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Left Cabinet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Open Right Cabinet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left Drawer Closeup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left Drawer Closeup1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clock Closeup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Door Closeup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Congratulations.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shovel Closeup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batteries on Shovel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Batteries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screwdriver Inventory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chair.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shovel Inventory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV Overlay1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Green Key Hole.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red Key Hole.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title Computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The End Wine Glasses.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
